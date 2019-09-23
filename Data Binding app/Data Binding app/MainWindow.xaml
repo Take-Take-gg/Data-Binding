@@ -7,21 +7,11 @@
         mc:Ignorable="d"
         Title="Ejercicio Biding" Height="450" Width="800">
     <Grid>
-
-        <Button Name="Boton" Content="{Binding ElementName = txtbox, Path=Text}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="224" Margin="473,109,0,0" Height="68" FontSize="24"/>
-        
-        
-        
-        <TextBox Name = "txtbox" HorizontalAlignment="Left" Height="68" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="257" Margin="94,109,0,0" FontSize="24" >
- 
-        <TextBox.RenderTransform>
-            <TransformGroup>
-                <ScaleTransform ScaleX="1.33" ScaleY="4"/>
-                <RotateTransform Angle="-10"/>
-            </TransformGroup>
-        </TextBox.RenderTransform>
-            
-        </TextBox>
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="68*"/>
+            <ColumnDefinition Width="31*"/>
+        </Grid.ColumnDefinitions>
+        <InkCanvas Name="Lienzo" HorizontalAlignment="Left" Height="325" Margin="23,10,0,0" VerticalAlignment="Top" Width="743" Grid.ColumnSpan="2"/>
+        <Button Name="btnNomas" Content="Boton pa borrar" HorizontalAlignment="Left" Margin="36,373,0,0" VerticalAlignment="Top" Width="115" Click="BtnNomas_Click"/>
     </Grid>
 </Window>
