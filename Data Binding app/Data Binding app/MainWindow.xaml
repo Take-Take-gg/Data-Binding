@@ -11,7 +11,16 @@
         <Button Name="Boton" Content="{Binding ElementName = txtbox, Path=Text}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="224" Margin="473,109,0,0" Height="68" FontSize="24"/>
         
         
+        
         <TextBox Name = "txtbox" HorizontalAlignment="Left" Height="68" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="257" Margin="94,109,0,0" FontSize="24" >
+ 
+        <TextBox.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform ScaleX="1.33" ScaleY="4"/>
+                <RotateTransform Angle="-10"/>
+            </TransformGroup>
+        </TextBox.RenderTransform>
+            
         </TextBox>
 
     </Grid>
