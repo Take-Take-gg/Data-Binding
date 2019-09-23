@@ -25,9 +25,6 @@ namespace Data_Binding_app
             InitializeComponent();
         }
 
-        private void BtnNomas_Click(object sender, RoutedEventArgs e)
-        {
-            this.Lienzo.Strokes.Clear(); //liempia el lienzo
-        }
+        
     }
 }

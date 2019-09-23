@@ -7,18 +7,13 @@
         mc:Ignorable="d"
         Title="Ejercicio Biding" Height="450" Width="800">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="68*"/>
-            <ColumnDefinition Width="31*"/>
-        </Grid.ColumnDefinitions>
+
+
+        <Image  Source="imagen/segundo ira pues.jpg" Stretch="UniformToFill"></Image>
+        <Image HorizontalAlignment="Left" Height="234" VerticalAlignment="Top" Width="279" Margin="140,62,0,0" Source="imagen/ira pues.jpg" Stretch="Fill"/>
         
-        <InkCanvas Name="Lienzo" HorizontalAlignment="Left" Height="325" Margin="23,10,0,0" VerticalAlignment="Top" Width="743" Grid.ColumnSpan="2">
-            <InkCanvas.DefaultDrawingAttributes>
-                <DrawingAttributes Color="LightPink" Width="2" Height="25" FitToCurve="True" IsHighlighter="False"/>
-            </InkCanvas.DefaultDrawingAttributes>
-            <Label Content="Ella no te ama, entiendelo"/>
-        </InkCanvas>
-        
-        <Button Name="btnNomas" Content="Boton pa borrar" HorizontalAlignment="Left" Margin="36,373,0,0" VerticalAlignment="Top" Width="115" Click="BtnNomas_Click"/>
+
+        <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Margin="573,109,0,0" Height="84"/>
+
     </Grid>
 </Window>
